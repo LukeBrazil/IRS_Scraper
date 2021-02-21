@@ -162,5 +162,5 @@ while True:
         print('')
 
     # Ending the program
-    print('Thank You!!')
+    print("Data sent to JSON file and PDF's have been saved in your subdirectory.")
     break
