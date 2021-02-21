@@ -65,12 +65,6 @@ while True:
                 form_number = form_product_number
                 pdf_file = requests.get(form_pdf_url)
                 link_array.append([form_number, year_integer, form_pdf_url])
-                # start_year = int(input(f'Please enter a year between you would like to start with for {form_number}. '))
-                # while start_year != int:
-                #     start_year = int(input(f'Please enter a year you would like to start with for {form_number}: '))
-                # if year_integer >= start_year:
-                #     with open(f"form_pdfs/{form_product_number} - {year_integer}.pdf", 'wb') as file:
-                #         file.write(pdf_file.content)
         min_max_years.append([year_data[0], year_data[-1]])
         min_year = min_max_years[0][0]
         max_year = min_max_years[0][1]
